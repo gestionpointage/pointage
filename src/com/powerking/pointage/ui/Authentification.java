@@ -37,27 +37,27 @@ public class Authentification extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        JBGImageLabel = new javax.swing.JLabel();
+        jLabelLogin = new javax.swing.JLabel();
+        jLabelPasswd = new javax.swing.JLabel();
         login = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         pass = new javax.swing.JPasswordField();
         error = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        JPKLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/another/pointeuse 3.jpg"))); // NOI18N
+        JBGImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/powerking/pointage/ui/images/pointeuse 3.jpg"))); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel2.setText("LOGIN          : ");
+        jLabelLogin.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelLogin.setForeground(new java.awt.Color(51, 51, 255));
+        jLabelLogin.setText("LOGIN          : ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel3.setText("PASSWORD :");
+        jLabelPasswd.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelPasswd.setForeground(new java.awt.Color(51, 51, 255));
+        jLabelPasswd.setText("PASSWORD :");
 
         login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +85,7 @@ public class Authentification extends javax.swing.JFrame {
         error.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         error.setForeground(new java.awt.Color(0, 153, 51));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/another/Sans titre.png"))); // NOI18N
+        JPKLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/powerking/pointage/ui/images/Sans titre.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,7 +93,7 @@ public class Authentification extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(JBGImageLabel)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
@@ -101,8 +101,8 @@ public class Authentification extends javax.swing.JFrame {
                             .addComponent(error, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
+                                    .addComponent(jLabelLogin)
+                                    .addComponent(jLabelPasswd))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(pass, javax.swing.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
@@ -110,8 +110,8 @@ public class Authentification extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(20, Short.MAX_VALUE))
+                        .addComponent(JPKLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -123,14 +123,14 @@ public class Authentification extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                        .addComponent(JPKLogo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
+                            .addComponent(jLabelLogin)
                             .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
+                            .addComponent(jLabelPasswd)
                             .addComponent(pass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(26, 26, 26)
                         .addComponent(error, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -138,7 +138,7 @@ public class Authentification extends javax.swing.JFrame {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(112, 112, 112))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(JBGImageLabel)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -217,12 +217,12 @@ public class Authentification extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JBGImageLabel;
+    private javax.swing.JLabel JPKLogo;
     private javax.swing.JLabel error;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabelLogin;
+    private javax.swing.JLabel jLabelPasswd;
     private javax.swing.JTextField login;
     private javax.swing.JPasswordField pass;
     // End of variables declaration//GEN-END:variables
