@@ -41,13 +41,14 @@ public class Authentification extends javax.swing.JFrame {
         jLabelLogin = new javax.swing.JLabel();
         jLabelPasswd = new javax.swing.JLabel();
         login = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jButtonConnecter = new javax.swing.JButton();
         pass = new javax.swing.JPasswordField();
         error = new javax.swing.JLabel();
         JPKLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 255));
+        setName("FrameAuthentification"); // NOI18N
 
         JBGImageLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/powerking/pointage/ui/images/pointeuse 3.jpg"))); // NOI18N
 
@@ -65,14 +66,14 @@ public class Authentification extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 102, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Connecter");
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonConnecter.setBackground(new java.awt.Color(255, 102, 0));
+        jButtonConnecter.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButtonConnecter.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonConnecter.setText("Connecter");
+        jButtonConnecter.setBorderPainted(false);
+        jButtonConnecter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButtonConnecterActionPerformed(evt);
             }
         });
 
@@ -114,7 +115,7 @@ public class Authentification extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonConnecter, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38))))
         );
         layout.setVerticalGroup(
@@ -135,7 +136,7 @@ public class Authentification extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(error, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonConnecter, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(112, 112, 112))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(JBGImageLabel)
@@ -145,7 +146,7 @@ public class Authentification extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButtonConnecterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnecterActionPerformed
         // TODO add your handling code here:
         
         Statement s = null ;
@@ -168,7 +169,7 @@ public class Authentification extends javax.swing.JFrame {
             Logger.getLogger(Authentification.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButtonConnecterActionPerformed
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
@@ -220,7 +221,7 @@ public class Authentification extends javax.swing.JFrame {
     private javax.swing.JLabel JBGImageLabel;
     private javax.swing.JLabel JPKLogo;
     private javax.swing.JLabel error;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButtonConnecter;
     private javax.swing.JLabel jLabelLogin;
     private javax.swing.JLabel jLabelPasswd;
     private javax.swing.JTextField login;
